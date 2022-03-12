@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-[url('https://images.unsplash.com/photo-1494172961521-33799ddd43a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80')] bg-center bg-no-repeat bg-cover">
+    <div className="h-screen bg-[url('https://www.rappler.com/tachyon/2022/01/philippine-elections-voters-20160509-001-scaled.jpeg')] bg-center bg-no-repeat bg-cover">
       <div className="absolute w-full h-full bg-black bg-opacity-50"></div>
       <div className="relative z-30 max-w-5xl px-4 pt-24 mx-auto sm:pt-24 lg:pt-32">
         <h1 className="text-4xl font-bold text-center text-white sm:text-5xl lg:text-6xl">
@@ -30,7 +31,7 @@ const Hero = () => {
             aria-label="Filter projects"
             placeholder="Ex. 6f87a6bj"
           />
-          <Link href="/">
+          <Link href="/search">
             <a className="flex items-center justify-center h-12 px-6 mt-5 font-bold text-white bg-blue-500 rounded-lg sm:mt-0 sm:w-auto">
               Search
             </a>
