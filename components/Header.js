@@ -3,11 +3,14 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex flex-row items-center justify-between px-4 border-b border-gray-200 sm:px-6 md:px-8">
+    <div className="flex flex-row items-center justify-between px-4 py-1 border-b border-gray-200 sm:px-6 md:px-8">
       <Link href="/">
         <a className="flex flex-row items-center">
-          <Image src={"/logo-sample.png"} width={50} height={50} />
-          <p className="pl-1 font-semibold">Sample-logo</p>
+          <Image src={"/logo-ph-vote.png"} width={50} height={50} />
+          <div>
+            <p className="pl-1 text-sm font-semibold">VOTE</p>
+            <p className="pl-1 text-sm font-semibold">VERIFICATION PH</p>
+          </div>
         </a>
       </Link>
       <div className="flex flex-row items-center">
@@ -19,12 +22,14 @@ const Header = () => {
             About us
           </a>
         </Link>
-        <Link href="/about">
-          <a className="mx-4 text-sm font-semibold hover:text-blue-500">Test</a>
+        <Link href="https://comelec.gov.ph/">
+          <a className="mx-4 text-sm font-semibold hover:text-blue-500">
+            COMELEC
+          </a>
         </Link>
         <Link href="/contact">
           <a className="ml-4 text-sm font-semibold hover:text-blue-500">
-            Contact us
+            Buy me a drink
           </a>
         </Link>
       </div>
